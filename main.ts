@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-	
+    battleship.change(LedSpriteProperty.X, -1)
 })
 input.onButtonPressed(Button.AB, function () {
     shot = game.createSprite(battleship.get(LedSpriteProperty.X), battleship.get(LedSpriteProperty.Y))
@@ -10,7 +10,7 @@ input.onButtonPressed(Button.AB, function () {
     shot.change(LedSpriteProperty.Y, -1)
 })
 input.onButtonPressed(Button.B, function () {
-	
+    battleship.change(LedSpriteProperty.X, 1)
 })
 let shot: game.LedSprite = null
 let battleship: game.LedSprite = null
